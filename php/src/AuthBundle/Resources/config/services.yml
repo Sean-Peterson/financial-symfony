@@ -1,0 +1,8 @@
+services:
+
+  app.form_login_authenticator:
+    class: AuthBundle\Security\FormLoginAuthenticator
+    arguments: ["@service_container"]
+  app.admin_login_authenticator:
+    class: AuthBundle\Security\AdminLoginAuthenticator
+    arguments: ["@service_container"]

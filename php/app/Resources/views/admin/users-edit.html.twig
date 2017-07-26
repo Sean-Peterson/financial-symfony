@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+{% block body %}
+    <h1>{{user.firstName}} {{user.lastName}} Profile created at <span class="date"> {{profile_created}} </span></h1>
+    <div class="flex-grid">
+        <div class="col edit-labels">
+            {{ form_start(form) }}
+            {{ form_label(form.First_Name) }}
+            <br>
+            {{ form_label(form.Last_Name) }}
+            <br>
+            {{ form_label(form.Phone_Number) }}
+            <br>
+            {{ form_label(form.Password) }}
+        </div><!-- /col -->
+        <div class="col edit-formboxes">
+            {{ form_widget(form.First_Name) }}
+            {{ form_widget(form.Last_Name) }}
+            {{ form_widget(form.Phone_Number) }}
+            {{ form_widget(form.Password) }}
+            <div class="save-btn">
+                {{ form_widget(form.save) }}
+            </div>
+            <button type="button" name="btn btn-default" class="cancel-button">Cancel</button>
+        </div><!-- /col -->
+            {{ form_end(form) }}
+    </div><!-- /flex-grid -->
+{% endblock %}

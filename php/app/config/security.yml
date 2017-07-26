@@ -1,0 +1,84 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/security.html
+security:
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+
+    encoders:
+          AppBundle\Entity\User:
+              algorithm: bcrypt
+
+    # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        # in_memory:
+        #     memory: ~
+        user_db:
+            entity:
+                class: AppBundle\Entity\User
+                property: email
+        admin_db:
+            entity:
+                class: AppBundle\Entity\Admin
+                property: username
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        admin:
+            context: main_context
+            provider: admin_db
+            pattern: ^/admin
+            switch_user:
+                role: ROLE_ADMIN
+            guard:
+                authenticators:
+                    - app.admin_login_authenticator
+        
+            # use the named routes defined in 'AuthBundle\Controller\SecurityController.php'
+            form_login:
+                login_path:   admin_login
+                check_path:   admin_login_check
+                csrf_token_generator: security.csrf.token_manager
+
+            logout:
+                path:   admin_logout
+                target: admin_login
+
+        default:
+            context: main_context
+            anonymous: ~
+            pattern: ^/
+            switch_user:
+                role: ROLE_ADMIN
+                provider: user_db
+            guard:
+                authenticators:
+                    - app.form_login_authenticator
+            # activate different ways to authenticate
+
+            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+            #form_login: ~
+
+            # use the named routes defined in 'AuthBundle\Controller\SecurityController.php'
+            form_login:
+                login_path:   homepage
+                check_path:   login_check
+                csrf_token_generator: security.csrf.token_manager
+
+            logout:
+                path:   logout
+                target: homepage
+
+
+    access_control:
+        - { path: ^/user, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/admin, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }

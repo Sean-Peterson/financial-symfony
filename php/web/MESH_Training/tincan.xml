@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6hrJc7abjZO_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training</description>
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6oaW2rnGJeg" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6UJctta2fnE" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6gvLBXqL1Pk" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6TrS8XXSvCe" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5p5Ei1Vu8Dt" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6qWAEclX64U" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6X5wyvNBmMc" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5omcjcgL92V" type="http://adlnet.gov/expapi/activities/objective">
+			<name lang="und">MESH Training 6.21.17-2 </name>
+			<description lang="und">MESH Training 6.21.17-2 </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5kwFVtZS66h" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Intro</name>
+			<description lang="und">Intro</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6OcdAflxSGL" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6OcdAflxSGL/5ZGWsacAKdr" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5kTZkNMTJAV</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5kTZkNMTJAV</id>
+					<description lang="und">Yes, I consent</description>
+				</component>
+				<component>
+					<id>choice_5nf8gyPKNke</id>
+					<description lang="und">No, I do not consent</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5a8sbfD0zc2" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6bqUHYIMy9z" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Wayfinding Menu</name>
+			<description lang="und">Wayfinding Menu</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5kj2A40ktRF" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Wayfinding Desktop</name>
+			<description lang="und">Wayfinding Desktop</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6QbeeNTtEST" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Wayfinding Mobile</name>
+			<description lang="und">Wayfinding Mobile</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ajpssAZ0Xb" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Why is this important?</name>
+			<description lang="und">Why is this important?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5wDXVGWawHl" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Section Overview</name>
+			<description lang="und">Section Overview</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/66L4ZlDCqbx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Pretest intro</name>
+			<description lang="und">Pretest intro</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5Zw5YxsNr3M" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Pre-test thank you</name>
+			<description lang="und">Pre-test thank you</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6jy5wfCvsBj" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Module One</name>
+			<description lang="und">Module One</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5aaPY5CXj6S" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">MESH Overview</name>
+			<description lang="und">MESH Overview</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6oTS6OmIrzl" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">WFC and Sleep</name>
+			<description lang="und">WFC and Sleep</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6kXKbatraVX" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Interconnected</name>
+			<description lang="und">Interconnected</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6amrY0ivkJe" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Supervisor role</name>
+			<description lang="und">Supervisor role</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5W6h4LutfQb" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">KC MTC</name>
+			<description lang="und">KC MTC</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6N122rIihvV" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6N122rIihvV/6HSNWXggLG1" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5sVB3gZWCwO" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/67w6Od2YpBx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Introduction to Sleep Leadership</name>
+			<description lang="und">Introduction to Sleep Leadership</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5gEkSRPybJD" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">sleep facts</name>
+			<description lang="und">sleep facts</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5Zp3Nvfjh5t" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Hours of sleep</name>
+			<description lang="und">Hours of sleep</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6QEpcIsFDWG" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">consequences overall</name>
+			<description lang="und">consequences overall</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5kZ6djLklyF" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">consequences at work</name>
+			<description lang="und">consequences at work</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6KaDEtzfo6V" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Signs of sleep insufficiency</name>
+			<description lang="und">Signs of sleep insufficiency</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6i1rm1qbZkt" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Icon template 2</name>
+			<description lang="und">Icon template 2</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6Bhl1tOPVY4" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">KC Sleep</name>
+			<description lang="und">KC Sleep</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ZoFod1f8eY" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ZoFod1f8eY/6riEn4vNkCo" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6MjLbXLBZO5" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6PuxQEnJsbW" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Introduction</name>
+			<description lang="und">Introduction</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6jWCTxtZ9WF" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Behaviors Menu</name>
+			<description lang="und">Behaviors Menu</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6Y4YAEpe9MO" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Emotional Support</name>
+			<description lang="und">Emotional Support</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6jJrZNwPYpi" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Role Modeling</name>
+			<description lang="und">Role Modeling</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/67DqJbE6BPe" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Instrumental Support</name>
+			<description lang="und">Instrumental Support</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6JOMQRRx3gO" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">KC Mod2</name>
+			<description lang="und">KC Mod2</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5cuHYCthDGm" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Knowledge Check Mod2 slide count</name>
+			<description lang="und">Knowledge Check Mod2 slide count</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5cuHYCthDGm/6G9PC8sMckG" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5WGaV4l1Jim" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6pVNEK0JGXF" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Post test thank you</name>
+			<description lang="und">Post test thank you</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5gtyeE7VQmZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Win-Win Management</name>
+			<description lang="und">Win-Win Management</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5wCDvPjggWE" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Untitled Slide</name>
+			<description lang="und">Untitled Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5y8X00PieA8" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">FSSB</name>
+			<description lang="und">FSSB</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5yPxzGzTBZn" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">FSSB facts</name>
+			<description lang="und">FSSB facts</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6YUR8f02P1M" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Work-Family Conflict Menu</name>
+			<description lang="und">Work-Family Conflict Menu</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6oj84iZRdHk" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Subordinate1</name>
+			<description lang="und">Subordinate1</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6bHTbKYuqhA" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Employer1</name>
+			<description lang="und">Employer1</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6UdEvDeuumk" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Family1</name>
+			<description lang="und">Family1</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6PNCCvMYrj8" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Health</name>
+			<description lang="und">Health</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ai8VOhcfJf" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">KC FSSB</name>
+			<description lang="und">KC FSSB</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5kAUzISoUlZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5kAUzISoUlZ/6iGrpi4avZh" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6jraWjrp8pz" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69CdV0PbpL1" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Supervisor Role</name>
+			<description lang="und">Supervisor Role</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5beEFSK8yGK" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">3 Cs</name>
+			<description lang="und">3 Cs</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6TDtW12mdvF" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Principle 1: Control</name>
+			<description lang="und">Principle 1: Control</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6foCV5OCjdE" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Principle 2 Concern</name>
+			<description lang="und">Principle 2 Concern</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6pKGoMkHu11" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Principle 3 Climate</name>
+			<description lang="und">Principle 3 Climate</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5ccT8N09dbq" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Influence</name>
+			<description lang="und">Influence</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5eyGCXxzB0b" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">KC 3Cs</name>
+			<description lang="und">KC 3Cs</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69L1DNYtVbI" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69L1DNYtVbI/5gDM45WnosZ" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Knowledge Check 1 slide count</name>
+			<description lang="und">Knowledge Check 1 slide count</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5fVr7OJWffc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6BhWTUEJsHA" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Achievements</name>
+			<description lang="und">Achievements</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5yaO9UmLw9Z" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">References</name>
+			<description lang="und">References</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6RY9kyMfze1" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What are Emotional Support Behaviors?</name>
+			<description lang="und">What are Emotional Support Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6RY9kyMfze1/6JPNFzg2Z0j" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What are Emotional Support Behaviors?</name>
+			<description lang="und">What are Emotional Support Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5vXoq7E2Za9</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5vXoq7E2Za9</id>
+					<description lang="und">Supervisor behaviors that demonstrate a subordinate is values and their experiences are being considered by leadership</description>
+				</component>
+				<component>
+					<id>choice_68pPiFa0o5a</id>
+					<description lang="und">Supervisor behaviors that elicit positive emotions in subordinates to take their mind off of the difficulties of work and life stress</description>
+				</component>
+				<component>
+					<id>choice_6Jwc79bv44h</id>
+					<description lang="und">Supervisor behaviors that provide specific resources to the unit to increase well-being by enabling people to be more engaged at work</description>
+				</component>
+				<component>
+					<id>choice_6oDKoBpXkMQ</id>
+					<description lang="und">Supervisor behaviors that increase a subordinates ability to manage their emotions</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5guvKnlKXfS" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">According to this training, what are Role Modeling Behaviors?</name>
+			<description lang="und">According to this training, what are Role Modeling Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5guvKnlKXfS/6THexyJlVYX" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">According to this training, what are Role Modeling Behaviors?</name>
+			<description lang="und">According to this training, what are Role Modeling Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6FcdI0gfAQt</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6FcdI0gfAQt</id>
+					<description lang="und">Actions that show how you are taking care of your own work/life balance and sleep challenges</description>
+				</component>
+				<component>
+					<id>choice_6fwg1U5TwX8</id>
+					<description lang="und">Behaviors that demonstrate leadership competence which inspire subordinates to aspire to leadership roles themselves</description>
+				</component>
+				<component>
+					<id>choice_6jA6hGtSwIA</id>
+					<description lang="und">Behaviors that are intended to inspire subordinates to live healthier lives themselves by working hard, sleeping when able and taking care of family matters when possible</description>
+				</component>
+				<component>
+					<id>choice_5sicR8US4Uu</id>
+					<description lang="und">Organizing your work in a way which benefits both your unit and your squad</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6OvTygPqdIZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What are Instrumental Support Behaviors?</name>
+			<description lang="und">What are Instrumental Support Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6OvTygPqdIZ/5hpKkO5R7r9" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What are Instrumental Support Behaviors?</name>
+			<description lang="und">What are Instrumental Support Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6FGCL5j4TKP</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6FGCL5j4TKP</id>
+					<description lang="und">Actions that point subordinates to tools that will help them in managing their work life balance and sleep habits</description>
+				</component>
+				<component>
+					<id>choice_62wxSxiedyV</id>
+					<description lang="und">Providing support by carefully monitoring subordinate behaviors at work and providing assistance at critical moments</description>
+				</component>
+				<component>
+					<id>choice_5jDHAf5DiVK</id>
+					<description lang="und">Think about the department as a whole and its relationship with other departments when planning how to get shared goals accomplished</description>
+				</component>
+				<component>
+					<id>choice_5eI8OrUS5Rs</id>
+					<description lang="und">Diagnosing subordinate problems and then providing helpful feedback on how to overcome them</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5VMLlEuoXA3" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What is Win-Win Management?</name>
+			<description lang="und">What is Win-Win Management?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5VMLlEuoXA3/6g9p84FK6MO" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What is Win-Win Management?</name>
+			<description lang="und">What is Win-Win Management?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6XlYCgQve2N</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6XlYCgQve2N</id>
+					<description lang="und">Tailoring work in such a way that benefits both the workplace and subordinates</description>
+				</component>
+				<component>
+					<id>choice_6glH6GpOo0c</id>
+					<description lang="und">Reorganizing work flow to improve efficiency without investing more resources into the workplace</description>
+				</component>
+				<component>
+					<id>choice_5rXprlime4V</id>
+					<description lang="und">Utilizing resources in way that benefits the unit and supports the mission </description>
+				</component>
+				<component>
+					<id>choice_6WxInd5iMsZ</id>
+					<description lang="und">Asking subordinates how to restructure their work so they can be more productive</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6WYOKRhi37O" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">How long does it take to fully recover from a sleepless night?</name>
+			<description lang="und">How long does it take to fully recover from a sleepless night?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6WYOKRhi37O/5Vd1uoX6aNc" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">How long does it take to fully recover from a sleepless night?</name>
+			<description lang="und">How long does it take to fully recover from a sleepless night?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6eVaJDYZHYT</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6JQPUTtfvzP</id>
+					<description lang="und">One full 24hr period</description>
+				</component>
+				<component>
+					<id>choice_6eVaJDYZHYT</id>
+					<description lang="und">Several days </description>
+				</component>
+				<component>
+					<id>choice_5tzsz6oKSS4</id>
+					<description lang="und">One sleepless night really doesn’t have much of an impact</description>
+				</component>
+				<component>
+					<id>choice_5skuRbzVqRG</id>
+					<description lang="und">Over a week</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5tQWgeXfMZM" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Which of the following is an example of an Emotional Support Behavior?</name>
+			<description lang="und">Which of the following is an example of an Emotional Support Behavior?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5tQWgeXfMZM/6mMTmfXLnd2" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Which of the following is an example of an Emotional Support Behavior?</name>
+			<description lang="und">Which of the following is an example of an Emotional Support Behavior?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5WoIySTaeU0</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5WoIySTaeU0</id>
+					<description lang="und">Ask open ended questions and actively listen to subordinates responses</description>
+				</component>
+				<component>
+					<id>choice_6nQfk8uMVHx</id>
+					<description lang="und">Finding ways to improve unit moral by eliminating barriers to success</description>
+				</component>
+				<component>
+					<id>choice_6Cr2ODcwJGz</id>
+					<description lang="und">Be receptive to subordinates’ suggestions about their own schedules and work flow</description>
+				</component>
+				<component>
+					<id>choice_69hSHrMdxdo</id>
+					<description lang="und">Look for ways to implement subordinates’ suggestions as a way to enhance engagement</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6LoTKGJ3WU9" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</name>
+			<description lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6LoTKGJ3WU9/5vztdkeExvG" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</name>
+			<description lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5et6Gtx3mxD</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_64V9CMChGfA</id>
+					<description lang="und">37%</description>
+				</component>
+				<component>
+					<id>choice_65iB6twWTTH</id>
+					<description lang="und">47%</description>
+				</component>
+				<component>
+					<id>choice_5et6Gtx3mxD</id>
+					<description lang="und">57%</description>
+				</component>
+				<component>
+					<id>choice_67VEDvirVec</id>
+					<description lang="und">27%</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69iygXNiGpd" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</name>
+			<description lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69iygXNiGpd/5mdBlyTtN14" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</name>
+			<description lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5m3f21fXssX</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6nCzZayPOY5</id>
+					<description lang="und">True</description>
+				</component>
+				<component>
+					<id>choice_5m3f21fXssX</id>
+					<description lang="und">False</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5qCffoBpWN2" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </name>
+			<description lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5qCffoBpWN2/6nNuiRrqZFv" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </name>
+			<description lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6pFM4YAdTxs</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5WSWXKoaRMf</id>
+					<description lang="und">Puts their subordinate sleep first, above their own, so that their subordinates are capable of performing their job and the mission well</description>
+				</component>
+				<component>
+					<id>choice_6BmIvE0J6Al</id>
+					<description lang="und">Ensure their own quality of sleep so that they can perform their duties well</description>
+				</component>
+				<component>
+					<id>choice_6pFM4YAdTxs</id>
+					<description lang="und">Positively impact their subordinates sleep behaviors </description>
+				</component>
+				<component>
+					<id>choice_5oNiuLkmn86</id>
+					<description lang="und">Guide important discussions about the ways in which their subordinates tackle sleep issues to improve their sleep</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ErywRKvCOC" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </name>
+			<description lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ErywRKvCOC/5rjmAWj0nCw" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </name>
+			<description lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5nYG25Go3v1</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6naj2sXw6i5</id>
+					<description lang="und">.02</description>
+				</component>
+				<component>
+					<id>choice_5nYG25Go3v1</id>
+					<description lang="und">.08</description>
+				</component>
+				<component>
+					<id>choice_69aACQ6q8G0</id>
+					<description lang="und">.14</description>
+				</component>
+				<component>
+					<id>choice_6B1uAwJJCkT</id>
+					<description lang="und">.26</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6bUEe2ivSnf" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What helps promotes sleep health? (Select 3 options)</name>
+			<description lang="und">What helps promotes sleep health? (Select 3 options)</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6bUEe2ivSnf/5nI9PIrEeQW" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What helps promotes sleep health? (Select 3 options)</name>
+			<description lang="und">What helps promotes sleep health? (Select 3 options)</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5cMN1txhna1</correctResponsePattern>
+				<correctResponsePattern>choice_5Uipi66oHe0</correctResponsePattern>
+				<correctResponsePattern>choice_6ETxSZk2U3u</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5cMN1txhna1</id>
+					<description lang="und">Short naps</description>
+				</component>
+				<component>
+					<id>choice_5Uipi66oHe0</id>
+					<description lang="und">White noise</description>
+				</component>
+				<component>
+					<id>choice_6ETxSZk2U3u</id>
+					<description lang="und">Light sheets</description>
+				</component>
+				<component>
+					<id>choice_6UruUCfB7NP</id>
+					<description lang="und">A few drinks</description>
+				</component>
+				<component>
+					<id>choice_5rqYQDjmZ7W</id>
+					<description lang="und">Sleep medication</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69KaqMCXjcx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Lack of sleep is mostly associated with which of the following?</name>
+			<description lang="und">Lack of sleep is mostly associated with which of the following?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/69KaqMCXjcx/6chczeFou0V" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Lack of sleep is mostly associated with which of the following?</name>
+			<description lang="und">Lack of sleep is mostly associated with which of the following?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6YLo1UH13b7</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5yLKtOwF2yT</id>
+					<description lang="und">Memory loss</description>
+				</component>
+				<component>
+					<id>choice_6YLo1UH13b7</id>
+					<description lang="und">Difficulty focusing on tasks</description>
+				</component>
+				<component>
+					<id>choice_6FilSii7R9d</id>
+					<description lang="und">Euphoria</description>
+				</component>
+				<component>
+					<id>choice_6gHTfJlkg7M</id>
+					<description lang="und">Creativity </description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6cVNs3PgLKc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</name>
+			<description lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6cVNs3PgLKc/5gUbcG9ghMG" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</name>
+			<description lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6YNV0INelhs</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5dP0gLHKmpw</id>
+					<description lang="und">Worry less about family while working</description>
+				</component>
+				<component>
+					<id>choice_6hvue9LU3XB</id>
+					<description lang="und">Shut down work related activity when at home</description>
+				</component>
+				<component>
+					<id>choice_6YNV0INelhs</id>
+					<description lang="und">Better manage work and family </description>
+				</component>
+				<component>
+					<id>choice_6FjiyDmqAB3</id>
+					<description lang="und">Take more time off from work to be with family</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/62Scu2BI5PN" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Giving subordinates control of the work-life means:</name>
+			<description lang="und">Giving subordinates control of the work-life means:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/62Scu2BI5PN/5tZEK7RD20W" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Giving subordinates control of the work-life means:</name>
+			<description lang="und">Giving subordinates control of the work-life means:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5VhzgZqblEw</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6LkqycKXcLT</id>
+					<description lang="und">Always allowing them to choose when, how, and where to get tasks done</description>
+				</component>
+				<component>
+					<id>choice_6Cjm48BEC4z</id>
+					<description lang="und">Designating them as supervisors so they can decide who does what</description>
+				</component>
+				<component>
+					<id>choice_5VhzgZqblEw</id>
+					<description lang="und">Finding even small ways in which employees can feel control over their work-life</description>
+				</component>
+				<component>
+					<id>choice_6Hqu1mAhIEC</id>
+					<description lang="und">Giving employees freedom to do any job they want</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5hPflFW3zgT" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What is necessary to help influence the climate of your unit? </name>
+			<description lang="und">What is necessary to help influence the climate of your unit? </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5hPflFW3zgT/6ebMMd7eReQ" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What is necessary to help influence the climate of your unit? </name>
+			<description lang="und">What is necessary to help influence the climate of your unit? </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6IcWTg1YZZQ</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6WH1nvogrIG</id>
+					<description lang="und">Giving employees instructions to care for everyone in their unit’s emotional health </description>
+				</component>
+				<component>
+					<id>choice_6IcWTg1YZZQ</id>
+					<description lang="und">Actively advocating the principles of control and concern</description>
+				</component>
+				<component>
+					<id>choice_6ErTrayKME4</id>
+					<description lang="und">Participating in outside work activities that teach principles of persuasion</description>
+				</component>
+				<component>
+					<id>choice_6V9kvk6GCtA</id>
+					<description lang="und">Calling the highest managers to convince them of new rules that will change the climate</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5iSBx1LVT61" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">When subordinates feel supported, they are more likely to:</name>
+			<description lang="und">When subordinates feel supported, they are more likely to:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5iSBx1LVT61/6Ulw5WlI3Gc" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">When subordinates feel supported, they are more likely to:</name>
+			<description lang="und">When subordinates feel supported, they are more likely to:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6nxavMJN46s</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5dKNwblM3TM</id>
+					<description lang="und">Distract employees from work to talk about personal problems</description>
+				</component>
+				<component>
+					<id>choice_6kl7wQblrQf</id>
+					<description lang="und">Look for employment elsewhere</description>
+				</component>
+				<component>
+					<id>choice_6nxavMJN46s</id>
+					<description lang="und">Be more engaged with their work and organization</description>
+				</component>
+				<component>
+					<id>choice_6pYvTPbX2Es</id>
+					<description lang="und">Complain to supervisors about personal problems</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ePYy4VEgUi" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">When work conflicts with family life what generally happens? </name>
+			<description lang="und">When work conflicts with family life what generally happens? </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6ePYy4VEgUi/6EnXp1W5sm4" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">When work conflicts with family life what generally happens? </name>
+			<description lang="und">When work conflicts with family life what generally happens? </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6ae5wklQMqp</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5mykia8hWO2</id>
+					<description lang="und">People have less stress because the conflict indicates they are doing a lot for their family and workplace</description>
+				</component>
+				<component>
+					<id>choice_6ae5wklQMqp</id>
+					<description lang="und">People have poorer health and well-being outcomes such as poor sleep health</description>
+				</component>
+				<component>
+					<id>choice_6l3tuIFdv3f</id>
+					<description lang="und">People typically win awards in the workplace because they are investing so much</description>
+				</component>
+				<component>
+					<id>choice_6C1qoxkQ9Jo</id>
+					<description lang="und">Nothing, work should always conflict with family life. </description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6o4kEuvJRTL" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What problems are associated with 2 or more energy drinks per day? (Choose 2)</name>
+			<description lang="und">What problems are associated with 2 or more energy drinks per day? (Choose 2)</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6o4kEuvJRTL/6M8L8KYDhj2" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What problems are associated with 2 or more energy drinks per day? (Choose 2)</name>
+			<description lang="und">What problems are associated with 2 or more energy drinks per day? (Choose 2)</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5VZyyo9QbPh</correctResponsePattern>
+				<correctResponsePattern>choice_6oSz5GKdV6U</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5VZyyo9QbPh</id>
+					<description lang="und">Fatigue over time</description>
+				</component>
+				<component>
+					<id>choice_6oSz5GKdV6U</id>
+					<description lang="und">Mental health problems</description>
+				</component>
+				<component>
+					<id>choice_5dblJV84ndT</id>
+					<description lang="und">Problems focusing on work</description>
+				</component>
+				<component>
+					<id>choice_6XacyT8u9fR</id>
+					<description lang="und">Depressive symptoms </description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5oMmwupbiTr" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Approximately what proportion of working adults with children also care for elderly parents?</name>
+			<description lang="und">Approximately what proportion of working adults with children also care for elderly parents?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5oMmwupbiTr/5rWsX14vz0j" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Approximately what proportion of working adults with children also care for elderly parents?</name>
+			<description lang="und">Approximately what proportion of working adults with children also care for elderly parents?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5yDlsaQzuBF</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6W3Nvag9s8C</id>
+					<description lang="und">2%</description>
+				</component>
+				<component>
+					<id>choice_5yDlsaQzuBF</id>
+					<description lang="und">22%</description>
+				</component>
+				<component>
+					<id>choice_5kLtxCRy8cv</id>
+					<description lang="und">52%</description>
+				</component>
+				<component>
+					<id>choice_6UmGcyPsB66</id>
+					<description lang="und">72%</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5w6xU6U9CUc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Demonstrating concern means:</name>
+			<description lang="und">Demonstrating concern means:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5w6xU6U9CUc/6qCOzMVFtbH" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Demonstrating concern means:</name>
+			<description lang="und">Demonstrating concern means:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6Qvqaafr2p6</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6LWSRoPOZVk</id>
+					<description lang="und">Calling your subordinates for daily meetings to check on their well-being, family, and sleep</description>
+				</component>
+				<component>
+					<id>choice_5sZYB8v4u7U</id>
+					<description lang="und">Checking with each subordinate’s family to make sure they are meeting their family and sleep needs</description>
+				</component>
+				<component>
+					<id>choice_6Qvqaafr2p6</id>
+					<description lang="und">Listening and caring about subordinates’ personal lives, and accommodating family needs where possible</description>
+				</component>
+				<component>
+					<id>choice_5Vbiqh5LOP7</id>
+					<description lang="und">Having team meetings where employees engage in comforting each other</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/66EqxEzwjAV" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Based on the videos contained in the training, what is an example of Emotional Support for family life?</name>
+			<description lang="und">Based on the videos contained in the training, what is an example of Emotional Support for family life?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/66EqxEzwjAV/6qHSZiWZw4u" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Based on the videos contained in the training, what is an example of Emotional Support for family life?</name>
+			<description lang="und">Based on the videos contained in the training, what is an example of Emotional Support for family life?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6POV30Js90Z</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6POV30Js90Z</id>
+					<description lang="und">Talking about family life with subordinates who are going through a major life change</description>
+				</component>
+				<component>
+					<id>choice_69XTYmrptti</id>
+					<description lang="und">Giving advice about how to better manage a new family member by sharing a story</description>
+				</component>
+				<component>
+					<id>choice_5uMWrgeucZs</id>
+					<description lang="und">Setting the example of self-discipline in sleep and work-life balance to show subordinates how to juggle priorities</description>
+				</component>
+				<component>
+					<id>choice_60C010573C7</id>
+					<description lang="und">Offering to provide personal assistance to a subordinate who is struggling to manage work-family balance</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5tXJ541od7R" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What are Emotional Support Behaviors?</name>
+			<description lang="und">What are Emotional Support Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5tXJ541od7R/6YfgvZJgbr4" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What are Emotional Support Behaviors?</name>
+			<description lang="und">What are Emotional Support Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6SQbxQazidR</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6SQbxQazidR</id>
+					<description lang="und">Supervisor behaviors that demonstrate a subordinate is values and their experiences are being considered by leadership</description>
+				</component>
+				<component>
+					<id>choice_6fdKXRIZaVZ</id>
+					<description lang="und">Supervisor behaviors that elicit positive emotions in subordinates to take their mind off of the difficulties of work and life stress</description>
+				</component>
+				<component>
+					<id>choice_6Oamsh8rw9x</id>
+					<description lang="und">Supervisor behaviors that provide specific resources to the unit to increase well-being by enabling people to be more engaged at work</description>
+				</component>
+				<component>
+					<id>choice_6YYJeQssoqm</id>
+					<description lang="und">Supervisor behaviors that increase a subordinates ability to manage their emotions</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6aMQFjuNhOy" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">According to this training, what are Role Modeling Behaviors?</name>
+			<description lang="und">According to this training, what are Role Modeling Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6aMQFjuNhOy/6mhVut7CNW2" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">According to this training, what are Role Modeling Behaviors?</name>
+			<description lang="und">According to this training, what are Role Modeling Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6eIEMVUu9fm</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6eIEMVUu9fm</id>
+					<description lang="und">Actions that show how you are taking care of your own work/life balance and sleep challenges</description>
+				</component>
+				<component>
+					<id>choice_5xhWUeefPOS</id>
+					<description lang="und">Behaviors that demonstrate leadership competence which inspire subordinates to aspire to leadership roles themselves</description>
+				</component>
+				<component>
+					<id>choice_6ZZzAjfz53h</id>
+					<description lang="und">Behaviors that are intended to inspire subordinates to live healthier lives themselves by working hard, sleeping when able and taking care of family matters when possible</description>
+				</component>
+				<component>
+					<id>choice_674l97T82Mq</id>
+					<description lang="und">Organizing your work in a way which benefits both your unit and your squad</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6QuLt1Vcs15" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What are Instrumental Support Behaviors?</name>
+			<description lang="und">What are Instrumental Support Behaviors?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6QuLt1Vcs15/65ubNRP6Vx8" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What are Instrumental Support Behaviors?</name>
+			<description lang="und">What are Instrumental Support Behaviors?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5YtXTf64bpN</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5YtXTf64bpN</id>
+					<description lang="und">Actions that point subordinates to tools that will help them in managing their work life balance and sleep habits</description>
+				</component>
+				<component>
+					<id>choice_6Pb4C0T7hvi</id>
+					<description lang="und">Providing support by carefully monitoring subordinate behaviors at work and providing assistance at critical moments</description>
+				</component>
+				<component>
+					<id>choice_6SBfenjrMem</id>
+					<description lang="und">Think about the department as a whole and its relationship with other departments when planning how to get shared goals accomplished</description>
+				</component>
+				<component>
+					<id>choice_6Ec1mv4Cn2D</id>
+					<description lang="und">Diagnosing subordinate problems and then providing helpful feedback on how to overcome them</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6AYgoLGN73M" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What is Win-Win Management?</name>
+			<description lang="und">What is Win-Win Management?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6AYgoLGN73M/5nrPX4NUnkt" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What is Win-Win Management?</name>
+			<description lang="und">What is Win-Win Management?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6FCv871HJnZ</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6FCv871HJnZ</id>
+					<description lang="und">Tailoring work in such a way that benefits both the workplace and subordinates</description>
+				</component>
+				<component>
+					<id>choice_5yjGDc6mlaw</id>
+					<description lang="und">Reorganizing work flow to improve efficiency without investing more resources into the workplace</description>
+				</component>
+				<component>
+					<id>choice_6lHdI5oOccU</id>
+					<description lang="und">Utilizing resources in way that benefits the unit and supports the mission </description>
+				</component>
+				<component>
+					<id>choice_5qL1bjrcPjb</id>
+					<description lang="und">Asking subordinates how to restructure their work so they can be more productive</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5gZe1142fnS" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">How long does it take to fully recover from a sleepless night?</name>
+			<description lang="und">How long does it take to fully recover from a sleepless night?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5gZe1142fnS/64w2BaSURQt" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">How long does it take to fully recover from a sleepless night?</name>
+			<description lang="und">How long does it take to fully recover from a sleepless night?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_61iTIBeIQtv</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6fGvZdd2PLf</id>
+					<description lang="und">One full 24hr period</description>
+				</component>
+				<component>
+					<id>choice_61iTIBeIQtv</id>
+					<description lang="und">Several days </description>
+				</component>
+				<component>
+					<id>choice_65JHQsqIxqQ</id>
+					<description lang="und">One sleepless night really doesn’t have much of an impact</description>
+				</component>
+				<component>
+					<id>choice_68erQK98GCz</id>
+					<description lang="und">Over a week</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6D84rfzNf9m" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Which of the following is an example of an Emotional Support Behavior?</name>
+			<description lang="und">Which of the following is an example of an Emotional Support Behavior?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6D84rfzNf9m/5rQp0KkO9BA" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Which of the following is an example of an Emotional Support Behavior?</name>
+			<description lang="und">Which of the following is an example of an Emotional Support Behavior?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6Vgx1IpIW74</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6Vgx1IpIW74</id>
+					<description lang="und">Ask open ended questions and actively listen to subordinates responses</description>
+				</component>
+				<component>
+					<id>choice_6f9iS9lI8z9</id>
+					<description lang="und">Finding ways to improve unit moral by eliminating barriers to success</description>
+				</component>
+				<component>
+					<id>choice_6HdmOEBpKPi</id>
+					<description lang="und">Be receptive to subordinates’ suggestions about their own schedules and work flow</description>
+				</component>
+				<component>
+					<id>choice_5q9DthJUFjs</id>
+					<description lang="und">Look for ways to implement subordinates’ suggestions as a way to enhance engagement</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6dZowlzoqdx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</name>
+			<description lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6dZowlzoqdx/6Xw74mlb9rz" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</name>
+			<description lang="und">Approximately what proportion of men would give up a promotion to balance work and home life?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5xhR4e5F1xw</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5yT1X4VQebv</id>
+					<description lang="und">37%</description>
+				</component>
+				<component>
+					<id>choice_5b2D8Wuys9u</id>
+					<description lang="und">47%</description>
+				</component>
+				<component>
+					<id>choice_5xhR4e5F1xw</id>
+					<description lang="und">57%</description>
+				</component>
+				<component>
+					<id>choice_63YaoOQMskX</id>
+					<description lang="und">27%</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5zlYpBTBcHD" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</name>
+			<description lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5zlYpBTBcHD/6WmJDbUVTKW" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</name>
+			<description lang="und">Over-the-counter sleep aids generally help you get a good night’s sleep, true or false?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5zVRZu6DHWQ</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5vid5PXS67N</id>
+					<description lang="und">True</description>
+				</component>
+				<component>
+					<id>choice_5zVRZu6DHWQ</id>
+					<description lang="und">False</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5pNRJxaGe3X" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </name>
+			<description lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5pNRJxaGe3X/65FaiN0eQ91" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </name>
+			<description lang="und">“Sleep leadership” is a set of skill and behaviors that leaders adopt that…   </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5ydWQ9o8emy</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5qXDldrcMZC</id>
+					<description lang="und">Puts their subordinate sleep first, above their own, so that their subordinates are capable of performing their job and the mission well</description>
+				</component>
+				<component>
+					<id>choice_5gxL38OQvx1</id>
+					<description lang="und">Ensure their own quality of sleep so that they can perform their duties well</description>
+				</component>
+				<component>
+					<id>choice_5ydWQ9o8emy</id>
+					<description lang="und">Positively impact their subordinates sleep behaviors </description>
+				</component>
+				<component>
+					<id>choice_6lU30ocFxpp</id>
+					<description lang="und">Guide important discussions about the ways in which their subordinates tackle sleep issues to improve their sleep</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5r1nYEfCZFY" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </name>
+			<description lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/5r1nYEfCZFY/5Wbqu5DVjsx" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </name>
+			<description lang="und">Not getting enough sleep (e.g. all-nighter or 4 hours of sleep a night for 5-6 nights) is equivalent to having a Blood Alcohol Content of.. </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5rDGm4mRRcF</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6Z30FCBiQ9x</id>
+					<description lang="und">.02</description>
+				</component>
+				<component>
+					<id>choice_5rDGm4mRRcF</id>
+					<description lang="und">.08</description>
+				</component>
+				<component>
+					<id>choice_6Pc3P05bmG0</id>
+					<description lang="und">.14</description>
+				</component>
+				<component>
+					<id>choice_5zvskriOoU6</id>
+					<description lang="und">.26</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6klKsUSAgO3" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What helps promotes sleep health? (Select 3 options)</name>
+			<description lang="und">What helps promotes sleep health? (Select 3 options)</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6klKsUSAgO3/6Sa6fdMeI69" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What helps promotes sleep health? (Select 3 options)</name>
+			<description lang="und">What helps promotes sleep health? (Select 3 options)</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5dcXabfVg4S</correctResponsePattern>
+				<correctResponsePattern>choice_5dcs0xFQvbW</correctResponsePattern>
+				<correctResponsePattern>choice_5kqE36Ce6uQ</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5dcXabfVg4S</id>
+					<description lang="und">Short naps</description>
+				</component>
+				<component>
+					<id>choice_5dcs0xFQvbW</id>
+					<description lang="und">White noise</description>
+				</component>
+				<component>
+					<id>choice_5kqE36Ce6uQ</id>
+					<description lang="und">Light sheets</description>
+				</component>
+				<component>
+					<id>choice_67ht7GzudAC</id>
+					<description lang="und">A few drinks</description>
+				</component>
+				<component>
+					<id>choice_5b16aHLgVhS</id>
+					<description lang="und">Sleep medication</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6hwwizLloU9" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Lack of sleep is mostly associated with which of the following?</name>
+			<description lang="und">Lack of sleep is mostly associated with which of the following?</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6hwwizLloU9/6NDYmi5f932" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Lack of sleep is mostly associated with which of the following?</name>
+			<description lang="und">Lack of sleep is mostly associated with which of the following?</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_65bECGqlt4G</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6gLMyF0wa5Y</id>
+					<description lang="und">Memory loss</description>
+				</component>
+				<component>
+					<id>choice_65bECGqlt4G</id>
+					<description lang="und">Difficulty focusing on tasks</description>
+				</component>
+				<component>
+					<id>choice_5lAsaxLLWw8</id>
+					<description lang="und">Euphoria</description>
+				</component>
+				<component>
+					<id>choice_61fsGXRdCNU</id>
+					<description lang="und">Creativity </description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6LYDTwirMmB" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</name>
+			<description lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6LYDTwirMmB/6llgFWpoOvY" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</name>
+			<description lang="und">Family supportive leadership is a set of skills and behaviors that help employees:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6Wlz6et74NK</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6hISA5OSD1j</id>
+					<description lang="und">Worry less about family while working</description>
+				</component>
+				<component>
+					<id>choice_5V11WKjRL0W</id>
+					<description lang="und">Shut down work related activity when at home</description>
+				</component>
+				<component>
+					<id>choice_6Wlz6et74NK</id>
+					<description lang="und">Better manage work and family </description>
+				</component>
+				<component>
+					<id>choice_5czZQwVTL2Y</id>
+					<description lang="und">Take more time off from work to be with family</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/60wQD84oLKc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Giving subordinates control of the work-life means:</name>
+			<description lang="und">Giving subordinates control of the work-life means:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/60wQD84oLKc/63rdce4lC3l" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Giving subordinates control of the work-life means:</name>
+			<description lang="und">Giving subordinates control of the work-life means:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5w7A2Az4Hpn</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5sYOM7LkKJl</id>
+					<description lang="und">Always allowing them to choose when, how, and where to get tasks done</description>
+				</component>
+				<component>
+					<id>choice_5z6TsJjzed6</id>
+					<description lang="und">Designating them as supervisors so they can decide who does what</description>
+				</component>
+				<component>
+					<id>choice_5w7A2Az4Hpn</id>
+					<description lang="und">Finding even small ways in which employees can feel control over their work-life</description>
+				</component>
+				<component>
+					<id>choice_5XKIOuJZjZ0</id>
+					<description lang="und">Giving employees freedom to do any job they want</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6o7peN1AfcW" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">What is necessary to help influence the climate of your unit? </name>
+			<description lang="und">What is necessary to help influence the climate of your unit? </description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6o7peN1AfcW/5aA4yV1sADu" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">What is necessary to help influence the climate of your unit? </name>
+			<description lang="und">What is necessary to help influence the climate of your unit? </description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6czupf0TCDN</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6CL4yNLPrEv</id>
+					<description lang="und">Giving employees instructions to care for everyone in their unit’s emotional health </description>
+				</component>
+				<component>
+					<id>choice_6czupf0TCDN</id>
+					<description lang="und">Actively advocating the principles of control and concern</description>
+				</component>
+				<component>
+					<id>choice_6T5b0tCYSco</id>
+					<description lang="und">Participating in outside work activities that teach principles of persuasion</description>
+				</component>
+				<component>
+					<id>choice_5wryVBZsG7z</id>
+					<description lang="und">Calling the highest managers to convince them of new rules that will change the climate</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6g0ue8VJIo4" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">When subordinates feel supported, they are more likely to:</name>
+			<description lang="und">When subordinates feel supported, they are more likely to:</description>
+		</activity>
+		<activity id="http://6hrJc7abjZO_course_id/6g0ue8VJIo4/5c6TUiXdp3t" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">When subordinates feel supported, they are more likely to:</name>
+			<description lang="und">When subordinates feel supported, they are more likely to:</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6jsK7r9kDsT</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6eWRJuA3mWc</id>
+					<description lang="und">Distract employees from work to talk about personal problems</description>
+				</component>
+				<component>
+					<id>choice_6io75qvJXTr</id>
+					<description lang="und">Look for employment elsewhere</description>
+				</component>
+				<component>
+					<id>choice_6jsK7r9kDsT</id>
+					<description lang="und">Be more engaged with their work and organization</description>
+				</component>
+				<component>
+					<id>choice_5XNeluPdK8l</id>
+					<description lang="und">Complain to supervisors about personal problems</description>
+				</component>
+			</choices>
+		</activity>
+	</activities>
+</tincan>

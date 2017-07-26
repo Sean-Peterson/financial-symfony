@@ -1,0 +1,598 @@
+canvas{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+iframe{
+    width: 60vw;
+    height: 100vh;
+}
+
+.admin-behavior-form{
+    margin-top: 25px;
+}
+
+.admin-behavior-reset{
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 3px;
+    border:1px solid lightgrey;
+    padding: 4px 12px 4px 12px;
+}
+
+.admin-behavior-save{
+    background-color: rgb(92,184,92);
+    color: white;
+    border-radius: 3px;
+    border:none;
+    padding: 7px 40px 7px 40px;
+    float: right;
+    margin-top: 6px;
+}
+
+.bg-success{
+    margin: 0px;
+    width: 100vw;
+    text-align: center;
+}
+
+.create-save{
+    text-align: right;
+}
+
+
+.create-form-submit{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 40px 7px 40px;
+    font-size: .9em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.create-group-cancel{
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.create-group-create{
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.create-group-input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    padding: 10px 0 10px 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.create-group-input::placeholder{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.edit-form-submit{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 40px 7px 40px;
+    font-size: .9em;
+    margin-bottom: 5px;
+    margin-top: 60px;
+    display: inline;
+}
+
+.edit-group{
+    margin: 0px;
+}
+
+.edit-group-buttons{
+    display: inline;
+}
+
+.edit-group-cancel{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: .5px solid gainsboro;
+    padding: 10px 40px 7px 40px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.edit-group-name-form{
+    background-color: white;
+}
+
+.edit-group-message-form{
+    background-color: white;
+}
+
+.edit-group-save{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 40px 7px 40px;
+    background-color: rgb(92,184,92);
+    color: white;
+    margin-top: 15px;
+
+}
+
+.edit-save{
+    text-align: right;
+}
+
+.export-user-export-buttons{
+    width: 85%;
+    background-color: #5cb85c;
+    color: white;
+    margin-top: 17px;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+.form-inputs{
+    display: inline-block;
+    text-align: right;
+    margin-left: auto;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+.form-inputs input{
+    border: none;
+    border-bottom: 1px solid #1b75bb;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-labels{
+    text-transform: capitalize;
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+}
+
+.form-labels label{
+    margin: 0;
+}
+
+.green-button{
+    background-color: #5cb85c;
+    color: white;
+}
+
+.group-detail-view{
+    background-color: rgb(92,184,92);
+    color: white;
+    border-radius: 3px;
+    border:none;
+    padding: 4px 12px 4px 12px;
+}
+
+.group-invite-form-cancel{
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding: 12px 25px 12px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.group-invite-elements{
+    margin-left: 6%;
+}
+
+.group-invite-elements h3{
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.group-invite-form-upload{
+    background-color: #428bca;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+}
+
+.group-invite-form-file{
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+}
+
+.groups-manage-view{
+    width: 120px;
+}
+
+.groups-manage-search{
+    width: 120%;
+    padding: 8px 30px 8px 30px;
+    background-color: #428bca;
+    color: white;
+    font-size: 16px;
+}
+
+.invite-group-widget{
+    display: inline;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(92,184,92);
+    color: white;
+    right: 0;
+}
+
+.must{
+    font-size: .82em;
+    margin-bottom: 20px;
+    color: #f7931d;
+    font-weight: bold;
+}
+
+.must p{
+    margin-bottom: 0;
+}
+
+.must-sub{
+    width: 10vw;
+    color: #787878;
+    font-size: .85em;
+    font-weight: normal;
+}
+
+.profile-form{
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 0px 30px 0px 30px;
+    border-radius: 2px;
+    box-shadow: 0 4px 2px -2px gray;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.profile-form h3{
+    margin-bottom: 25px;
+}
+
+.search-box {
+    width: 95%;
+}
+
+.search-button .btn-default {
+    margin-left: 200px;
+}
+
+.search {
+    border-bottom: 0px white solid;
+}
+
+.text-blue{
+    color: #262261;
+}
+
+.text-light-blue{
+    color: #1b75bb
+}
+
+.user-email{
+    width: 10vw;
+    font-size: .85em;
+    color: rgb(240,173,78);
+}
+
+#accept-box{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid lightgray;
+    padding: 0px 20px 0px 20px;
+    border-radius: 2px;
+    box-shadow: 0 4px 2px -2px gray;
+    width: 85%;
+}
+
+#accept-box h3 {
+    color: #798b59;
+}
+
+#create-group-elements{
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    width: 90%;
+}
+
+#create-group-message{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #999999;
+}
+
+#create_group_name::placeholder{
+    color: #999999;
+}
+
+#create-group-name-label{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #999999;
+}
+
+#create_group_description{
+    height: 25vh;
+}
+
+#create_group_description::placeholder{
+    color: #999999;
+    line-height: 30px;
+}
+
+#edit-group-name{
+    color: rgb(221,221,221);
+}
+
+#edit-group-message{
+    margin-top: 10px;
+    color: rgb(221,221,221);
+}
+
+#email-confirm-table{
+    width: 100%;
+    align: left;
+}
+
+#email-confirm-about{
+    margin-left: 6%;
+}
+
+#email-confirm-save{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 40px 7px 40px;
+    background-color: rgb(92,184,92);
+    color: white;
+    margin-top: 8px;
+}
+
+#email-confirm-cancel{
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
+}
+
+#email_group_system_variable1{
+    border:0px;
+}
+
+#email_group_system_variable2{
+    border:0px;
+}
+
+#email_group_message{
+    height: 25vh;
+}
+
+#email-message{
+    margin-top: 15px;
+}
+
+#export-user-buttons{
+    margin: 0 auto;
+    width: 37.5%;
+    margin-top: 3%;
+}
+
+#export-user-buttons button{
+    background-color: rgb(92,184,92);
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+    width:200px;
+    margin: 5px;
+}
+
+#export-user-cancel-button{
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding: 12px 21px 12px 21px;
+    font-weight: 600;
+}
+
+#export-user-elements{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+#export-user-elements h4{
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#form{
+    text-align: right;
+}
+
+#form_Browse_Files{
+    margin-right: 0px;
+}
+
+#form_New_Group_About_Message{
+    font-size: 6px;
+    font-weight: normal;
+    padding-bottom: 200px;
+}
+
+#form_search_box{
+    padding: 18px 30px 18px 30px;
+}
+
+#group-detail-invited{
+    color: rgb(92,184,92);
+    white-space: nowrap;
+}
+
+#group-detail-participating{
+    color: rgb(92,184,92);
+    white-space: nowrap;
+}
+
+#group-detail-submit{
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 40px 7px 40px;
+    background-color: rgb(92,184,92);
+    color: white;
+    margin-top: 15px;
+}
+
+#group-invite-form{
+    display: inline-block;
+    width: 100%;
+}
+
+#group-invite-form-well{
+    width: 90%;
+    background-color: #f7f7f7;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+#groups-manage-table{
+    width: 100%;
+    background-color: #f7f7f7;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+#groups-manage-add{
+    color: #5cb85c;
+    margin-bottom: 40px;
+    margin-right: 3.5%;
+}
+
+#groups-manage-compose{
+    width: 200px;
+}
+
+#groupChart{
+    height: 10px;
+    width: 10px;
+}
+
+#invitation_accept{
+    color: white;
+    background-color: #1b75bb;
+    width: 14%;
+    border: 0px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 5px 2px 5px 2px;
+
+}
+
+#invitation-more-info{
+    margin-bottom: 40px;
+    margin-right: 2%;
+}
+
+#invitation-paragraph{
+    margin-right: 4%;
+}
+
+#invite_group_email_list{
+    margin: 0px 0px 0px 0px;
+    display: inline;
+}
+
+#invite_group_Cancel{
+    background-color: rgb(240,173,78);
+}
+
+#invite_group_Upload{
+    background-color: rgb(92,184,92);
+}
+
+#manage_users_search{
+    color: white;
+    white-space: nowrap;
+    background-color: red;
+    margin-right: 3.4vw;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #5cb85c;
+    padding: 10px 30px 10px 30px;
+}
+
+#manage_users_search_box{
+    /*height: 5vh;
+    width: 80vw;*/
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+#manage_users_search_filter{
+    border: 1px solid lightgray;
+    /*width: 80vw;*/
+    /*height: 5vh;*/
+}
+
+#training-button{
+    margin-top: 25px;
+    border-radius: 3px;
+    box-shadow: 0 0px 0px 0px gray;
+    border: none;
+    padding: 10px 20px 7px 20px;
+    font-size: .9em;
+}
+
+#training-text{
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 30px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#training-text h2{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,19 @@
+web:
+  build: .
+  dockerfile: Dockerfile
+  # command: php bin/console -vvv server:run 0.0.0.0:8000
+  volumes:
+    - ./php:/var/www/html
+    # - /var/www/html/vendor
+  ports:
+    - "8080:80"
+  links:
+    - db
+
+db:
+  image: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_DATABASE=php_dev

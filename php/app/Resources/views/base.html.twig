@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        {% block title %}
+            MESH
+        {% endblock %}
+    </title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
+    {% endblock %}
+    {% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/scripts.js') }}"></script>
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{asset('images/Dashboard-Logo.png') }}" />
+    {% block heading %}
+       
+    {% endblock %}
+
+</head>
+
+<body>
+    <div class="main-heading" id="main-heading">
+        <div class="main-logo">
+            <div class="container">
+            <img src="{{ asset('images/Dashboard-Logo.png') }}">
+            </div>
+        </div>
+        {% if '/admin/' in app.request.uri %}
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ path('manage_users') }}">Manage Users <span class="sr-only">(current)</span></a></li>
+                            <li><a href="{{ path('manage_groups') }}">Manage Groups</a></li>
+                            <li><a href="{{ path('export_user_data') }}">Export</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        {% elseif app.request.get('_route') == 'homepage' %}
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#login">User Login <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">The Team</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        
+        {% else %}
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="collapse navbar-collapse ">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ path('dashboard', { 'id': app.request.get('id') }) }}">Dashboard <span class="sr-only">(current)</span></a></li>
+                            <li><a href="{{ path('resources', { 'id': app.request.get('id') }) }}">Resources</a></li>
+                            <li><a href="{{ path('user_profile', { 'id': app.request.get('id') }) }}">Profile</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        {% endif %}
+    </div>
+    {% if is_granted('ROLE_PREVIOUS_ADMIN') %}
+        <a href="{{ path('manage_users', {'_switch_user': '_exit'}) }}">Exit impersonation</a>
+    {% endif %}
+    <main>
+    {% for flash_message in app.session.flashBag.get('notice') %}
+        <div class="bg-success container">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
+    </main>
+    <div class="container">
+        {% block body %}
+            <h1>This is the body</h1>
+        {% endblock %}
+        {% block footer %}
+            <p>&copy; OHSU - MESH Group</p>
+    </div><!-- /container -->
+        {% endblock %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+parameters:
+  database_host: db
+  database_port: 3306
+  database_name: php_dev_financial
+  database_user: root
+  database_password:
+  mailer_transport: smtp
+  mailer_host: seanpeterson11@gmail.com
+  mailer_user: null
+  mailer_password: null
+  secret: 8fc7499e3d19b0aaa4267dee3a9bbacd91aeeade
