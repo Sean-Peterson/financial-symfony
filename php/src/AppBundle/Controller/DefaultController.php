@@ -51,6 +51,7 @@ class DefaultController extends Controller
         $articles = curl_exec($curl);
         curl_close($curl);
         $stuff = json_decode($articles, true);
+        $state_tax = 0;
         if (isset($stuff[$marital_status]['income_tax_brackets'])) {
           for($i=0;$i<count($stuff[$marital_status]['income_tax_brackets']);$i++){
             if(60000<$stuff[$marital_status]['income_tax_brackets'][$i]['bracket']){
@@ -103,14 +104,14 @@ class DefaultController extends Controller
         $adjusted_col = intval($user_col *10000);
           return $this->render('results.html.twig',
           [
-            'rent'=>$rent,
+            'rent'=>number_format($rent),
             'state_name'=>$user_state,
-            'income'=>$income,
-            'col' => $adjusted_col,
-            'fed' => $fed_amount,
-            'state' => $state_amount,
-            'mth' => $monthly_take_home,
-            'ath' => $annual_take_home,
+            'income'=>number_format($income),
+            'col' => number_format($adjusted_col),
+            'fed' => number_format($fed_amount),
+            'state' => number_format($state_amount),
+            'mth' => number_format($monthly_take_home),
+            'ath' => number_format($annual_take_home),
             'city'=>$city,
           ]);
         }
