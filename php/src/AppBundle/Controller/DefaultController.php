@@ -26,11 +26,6 @@ class DefaultController extends Controller
         $income = $data['income'];
         $city = $data['city'];
         $marital_status = $data['marital_status'];
-        // echo '<pre>';
-        // var_dump($marital_status);
-        // var_dump($income);
-        // var_dump($city);
-        // '</pre>';
         $state='';
         $col = 0;
         $rent = 0;
@@ -44,7 +39,7 @@ class DefaultController extends Controller
         }
         $repository = $em->getRepository('AppBundle:City');
         $city_object = $repository->findOneByCity($city);
-        // var_dump('The state is'.$state.'   did it work?');
+        $ny = $repository->findOneByCity('New-York');
         $authorization = 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUElfS0VZX01BTkFHRVIiLCJodHRwOi8vdGF4ZWUuaW8vdXNlcl9pZCI6IjU5MTlmMTlmZTkyMWMwMzY2NjZmMTMxZiIsImh0dHA6Ly90YXhlZS5pby9zY29wZXMiOlsiYXBpIl0sImlhdCI6MTQ5NDg3MjQ3OX0.grP0a9fG_4NdaOaRWk5H-lwG9XOfcgic8eUmhTPF7Tc';
         $curl = curl_init();
         curl_setopt_array($curl, array(
@@ -57,7 +52,6 @@ class DefaultController extends Controller
         $articles = curl_exec($curl);
         curl_close($curl);
         $stuff = json_decode($articles, true);
-        // var_dump($stuff);
         if (isset($stuff[$marital_status]['income_tax_brackets'])) {
           for($i=0;$i<count($stuff[$marital_status]['income_tax_brackets']);$i++){
             if(60000<$stuff[$marital_status]['income_tax_brackets'][$i]['bracket']){
@@ -67,11 +61,8 @@ class DefaultController extends Controller
               $tax_array_number=count($stuff[$marital_status]['income_tax_brackets'])-1;
             }
           }
-
-          $state_tax=(float)$stuff[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate'];
-
+          $state_tax=.01*((float)$stuff[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate']);
         }
-
         $authorization = 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUElfS0VZX01BTkFHRVIiLCJodHRwOi8vdGF4ZWUuaW8vdXNlcl9pZCI6IjU5MTlmMTlmZTkyMWMwMzY2NjZmMTMxZiIsImh0dHA6Ly90YXhlZS5pby9zY29wZXMiOlsiYXBpIl0sImlhdCI6MTQ5NDg3MjQ3OX0.grP0a9fG_4NdaOaRWk5H-lwG9XOfcgic8eUmhTPF7Tc';
         $curl = curl_init();
         curl_setopt_array($curl, array(
@@ -93,22 +84,40 @@ class DefaultController extends Controller
           }
         }
 
-        $fed_tax=(float)$stuff[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate'];
+        $fed_tax=.01*((float)$stuff[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate']);
 
+        if ($city != "New-York") {
+          $user_col = ($city_object->getCol()*.0001) * $ny->getCol();
+          $rent = $city_object->getRent();
+          $user_state = strtoupper($city_object->getState());
+        }else{
+          $user_col = $ny->getCol();
+          $rent = $ny->getRent();
+          $user_state = strtoupper($ny->getState());
+        }
 
+        $monthly_take_home = intval($income/12 - ((($income/12)*$state_tax)+(($income/12)*$fed_tax)+$user_col+$rent));
+        $annual_take_home = intval($income - (($income*$state_tax)+($income*$fed_tax)+($user_col*12)+($rent*12)));
 
-        echo '<pre>';
-          var_dump($fed_tax);
-          echo '</pre>';
-          $result='ham';
+        $fed_amount = $income * $fed_tax;
+        $state_amount = $income * $state_tax;
+        $adjusted_col = intval($user_col *10000);
           return $this->render('results.html.twig',
           [
-          'result' => $result
+            'rent'=>$rent,
+            'state_name'=>$user_state,
+            'income'=>$income,
+            'col' => $adjusted_col,
+            'fed' => $fed_amount,
+            'state' => $state_amount,
+            'mth' => $monthly_take_home,
+            'ath' => $annual_take_home,
+            'city'=>$city,
           ]);
         }
         return $this->render('default/index.html.twig',
         [
-        'form' => $form ->createView(),
+          'form' => $form ->createView(),
         ]);
       }
     }
