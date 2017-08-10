@@ -30,7 +30,6 @@ class DefaultController extends Controller
         $col = 0;
         $rent = 0;
         foreach ($entries as $value) {
-          // var_dump($value);
           if ($value->getCity() == $city) {
             $state = $value->getState();
             $col = $value->getCol();
