@@ -125,6 +125,13 @@ class DefaultController extends Controller
             'mth' => number_format($monthly_take_home),
             'ath' => number_format($annual_take_home),
             'city'=>$city,
+            'rent_js'=>$rent,
+            'income_js'=>$income,
+            'col_js' => $adjusted_col,
+            'fed_js' => $fed_amount,
+            'state_js' => $state_amount,
+            'mth_js' => $monthly_take_home,
+            'ath_js' => $annual_take_home,
           ]);
         }
         return $this->render('default/index.html.twig',

@@ -1,4 +1,9 @@
 {% extends 'base.html.twig' %}
+{% block javascripts %}
+  {{ parent() }}
+  <script src="{{ asset('js/annualChart.js') }}"></script>
+  <script src="{{ asset('js/monChart.js') }}"></script>
+{% endblock %}
 {% block body %}
   <div class="container">
     <div class="results">
@@ -9,6 +14,27 @@
       <p>Your estimated cost of living in {{city}} is <strong>${{col}}</strong> per month <small>(this includes utilities, transport, clothes, sports and leisure, markets, restaurants)<a href="https://www.numbeo.com/cost-of-living/in/{{city}}"> source</a></small></p>
       <p>Cost of renting a 1bdrm apt in the city is <strong>${{rent}}</strong> <small><a href="https://www.numbeo.com/cost-of-living/in/{{city}}">source</a></small></p>
       <p>After paying the tax man and living expenses, your take home <small>(aka potential savings/spending money)</small> is <strong>${{mth}}</strong> per month and <strong>${{ath}}</strong> per year</p>
+      <a href="{{ path('home') }}">Run it again</a>
+      <div class="monGraph">
+        <canvas id="monChart"></canvas>
+        <input id="income" type="hidden" value="{{income_js}}">
+        <input id="col" type="hidden" value="{{col_js}}">
+        <input id="fed" type="hidden" value="{{fed_js}}">
+        <input id="rent" type="hidden" value="{{rent_js}}">
+        <input id="state" type="hidden" value="{{state_js}}">
+        <input id="mth" type="hidden" value="{{mth_js}}">
+        <input id="ath" type="hidden" value="{{ath_js}}">
+      </div>
+      <div class="annualGraph">
+        <canvas id="annualChart"></canvas>
+        <input id="income" type="hidden" value="{{income_js}}">
+        <input id="col" type="hidden" value="{{col_js}}">
+        <input id="fed" type="hidden" value="{{fed_js}}">
+        <input id="rent" type="hidden" value="{{rent_js}}">
+        <input id="state" type="hidden" value="{{state_js}}">
+        <input id="mth" type="hidden" value="{{mth_js}}">
+        <input id="ath" type="hidden" value="{{ath_js}}">
+      </div>
     </div>
   </div>
 {% endblock %}
