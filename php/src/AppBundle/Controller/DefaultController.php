@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\UserInfoType;
+use AppBundle\Form\CompareType;
 use Doctrine\ORM\EntityManagerInterface;
 
 
@@ -19,8 +20,6 @@ class DefaultController extends Controller
     {
       //create a repository full of the City objects
       $repo = $this->getDoctrine()->getRepository('AppBundle:City');
-      //entries are all of the objects from the repository
-      $entries = $repo->findAll();
       //creates an instance of the UserInfoType form and then handles the request
       $form = $this->createForm(UserInfoType::class);
       $form->handleRequest($request);
