@@ -16,6 +16,13 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="home")
      */
+    public function homeAction(Request $request, EntityManagerInterface $em)
+    {
+      return $this->render('default/index.html.twig');
+    }
+    /**
+     * @Route("/single", name="single")
+     */
     public function resultsAction(Request $request, EntityManagerInterface $em)
     {
       //create a repository full of the City objects
@@ -133,7 +140,7 @@ class DefaultController extends Controller
             'ath_js' => $annual_take_home,
           ]);
         }
-        return $this->render('default/index.html.twig',
+        return $this->render('single.html.twig',
         [
           'form' => $form ->createView(),
         ]);

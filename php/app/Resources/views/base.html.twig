@@ -23,6 +23,16 @@
 </head>
 
 <body>
+  {% block nav %}
+  <div class="text-center">
+    <nav>
+      <button class="btn" type="button" name="button"><a href="{{ path('home') }}">Home</a></button>
+      <button class="btn" type="button" name="button"><a href="{{ path('single') }}">Single city</a></button>
+      <button class="btn" type="button" name="button"><a href="{{ path('compare') }}">Compare 2 cities</a></button>
+      <br><br>
+    </nav>
+  </div>
+    {% endblock %}
   {% block body %}
   {% endblock %}
   {% block footer %}

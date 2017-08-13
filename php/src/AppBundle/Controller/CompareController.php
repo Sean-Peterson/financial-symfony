@@ -147,6 +147,15 @@ class CompareController extends Controller
           $results['ath_js'.$i]=$annual_take_home;
 
         }
+        if ($results['ath0']>$results['ath1']) {
+          $results['percentage']=intval((($results['ath0']/$results['ath1'])-1)*100);
+          $results['more_money']=$results['city0'];
+          $results['less_money']=$results['city1'];
+        }else{
+          $results['percentage']=intval((($results['ath1']/$results['ath0'])-1)*100);
+          $results['more_money']=$results['city1'];
+          $results['less_money']=$results['city0'];
+        }
           return $this->render('compare_results.html.twig',
           [
             'results' => $results,
