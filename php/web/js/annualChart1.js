@@ -12,7 +12,7 @@ $(document).ready(function(){
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ["Net Income","Cost of Living","Rent","Federal Tax","State Tax","Take Home"],
+      labels: ["Net Income"+income,"Cost of Living","Rent","Federal Tax","State Tax","Take Home"],
       datasets: [
         {
         label: [],

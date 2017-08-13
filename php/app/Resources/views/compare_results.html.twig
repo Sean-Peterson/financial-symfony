@@ -15,8 +15,18 @@
       <p>Annual state tax <strong>${{results.state0}}</strong></p>
       <p>Your estimated cost of living in {{results.city0}} is <strong>${{results.col0}}</strong> per month <small>(this includes utilities, transport, clothes, sports and leisure, markets, restaurants)<a href="https://www.numbeo.com/cost-of-living/in/{{results.city0}}"> source</a></small></p>
       <p>Cost of renting a 1bdrm apt in the city is <strong>${{results.rent0}}</strong> <small><a href="https://www.numbeo.com/cost-of-living/in/{{results.city0}}">source</a></small></p>
-      <p>After paying the tax man and living expenses, your take home <small>(aka potential savings/spending money)</small> is <strong>${{results.mth0}}</strong> per month and <strong>${{results.ath0}}</strong> per year</p>
-      <a href="{{ path('home') }}">Run it again</a>
+      <p>After living expenses and paying the tax man, your take home <small>(aka potential savings/spending money)</small> is <strong>${{results.mth0}}</strong> per month and <strong>${{results.ath0}}</strong> per year</p>
+    </div>
+    <hr>
+    <div class="results">
+      <p>Assuming that you are making <strong>${{results.income1}}</strong> and living in <strong>{{results.city1}}, {{results.state_name1}}</strong></p>
+      <p>Annual federal tax <strong>${{results.fed1}}</strong></p>
+      <p>Annual state tax <strong>${{results.state1}}</strong></p>
+      <p>Your estimated cost of living in {{results.city1}} is <strong>${{results.col1}}</strong> per month <small>(this includes utilities, transport, clothes, sports and leisure, markets, restaurants)<a href="https://www.numbeo.com/cost-of-living/in/{{results.city1}}"> source</a></small></p>
+      <p>Cost of renting a 1bdrm apt in the city is <strong>${{results.rent1}}</strong> <small><a href="https://www.numbeo.com/cost-of-living/in/{{results.city1}}">source</a></small></p>
+      <p>After living expenses and paying the tax man, your take home <small>(aka potential savings/spending money)</small> is <strong>${{results.mth1}}</strong> per month and <strong>${{results.ath1}}</strong> per year</p>
+      <a href="{{ path('compare') }}">Run it again</a>
+      <hr>
       <h5 class="text-center">Monthly Take Home Breakdown</h5>
     </div>
     <div class="monGraph0">
@@ -28,6 +38,17 @@
       <input id="state0" type="hidden" value="{{results.state_js0}}">
       <input id="mth0" type="hidden" value="{{results.mth_js0}}">
       <input id="ath0" type="hidden" value="{{results.ath_js0}}">
+      <input id="city0" type="hidden" value="{{results.city0}}">
+      <input id="stat_name0" type="hidden" value="{{results.state_name0}}">
+      <input id="income1" type="hidden" value="{{results.income_js1}}">
+      <input id="col1" type="hidden" value="{{results.col_js1}}">
+      <input id="fed1" type="hidden" value="{{results.fed_js1}}">
+      <input id="rent1" type="hidden" value="{{results.rent_js1}}">
+      <input id="state1" type="hidden" value="{{results.state_js1}}">
+      <input id="mth1" type="hidden" value="{{results.mth_js1}}">
+      <input id="ath1" type="hidden" value="{{results.ath_js1}}">
+      <input id="city1" type="hidden" value="{{results.city1}}">
+      <input id="stat_name1" type="hidden" value="{{results.state_name1}}">
     </div>
     <h5 class="text-center">Annual Take Home Breakdown</h5>
     <div class="annualGraph0">
@@ -37,31 +58,5 @@
 
 
 
-    <div class="results">
-      <h2>Your Take Home Breakdown</h2>
-      <p>Assuming that you are making <strong>${{results.income1}}</strong> and living in <strong>{{results.city1}}, {{results.state_name1}}</strong></p>
-      <p>Annual federal tax <strong>${{results.fed1}}</strong></p>
-      <p>Annual state tax <strong>${{results.state1}}</strong></p>
-      <p>Your estimated cost of living in {{results.city1}} is <strong>${{results.col1}}</strong> per month <small>(this includes utilities, transport, clothes, sports and leisure, markets, restaurants)<a href="https://www.numbeo.com/cost-of-living/in/{{results.city1}}"> source</a></small></p>
-      <p>Cost of renting a 1bdrm apt in the city is <strong>${{results.rent1}}</strong> <small><a href="https://www.numbeo.com/cost-of-living/in/{{results.city1}}">source</a></small></p>
-      <p>After paying the tax man and living expenses, your take home <small>(aka potential savings/spending money)</small> is <strong>${{results.mth1}}</strong> per month and <strong>${{results.ath1}}</strong> per year</p>
-      <a href="{{ path('home') }}">Run it again</a>
-      <h5 class="text-center">Monthly Take Home Breakdown</h5>
-    </div>
-    <div class="monGraph1">
-      <canvas id="monChart1"></canvas>
-      <input id="income1" type="hidden" value="{{results.income_js1}}">
-      <input id="co1l" type="hidden" value="{{results.col_js1}}">
-      <input id="fed1" type="hidden" value="{{results.fed_js1}}">
-      <input id="rent1" type="hidden" value="{{results.rent_js1}}">
-      <input id="state1" type="hidden" value="{{results.state_js1}}">
-      <input id="mth1" type="hidden" value="{{results.mth_js1}}">
-      <input id="ath1" type="hidden" value="{{results.ath_js1}}">
-    </div>
-    <h5 class="text-center">Annual Take Home Breakdown</h5>
-    <div class="annualGraph1">
-      <canvas id="annualChart1"></canvas>
-
-    </div>
   </div>
 {% endblock %}
