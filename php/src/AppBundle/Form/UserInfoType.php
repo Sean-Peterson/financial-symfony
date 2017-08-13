@@ -43,6 +43,7 @@ class UserInfoType extends AbstractType
               "San Diego" => 'San-Diego',
               "San Francisco" => 'San-Francisco',
               "San Jose" => 'San-Jose',
+              "Seattle" => 'Seattle',
               "Washington D.C." => 'Washington',
             ),
         ))
