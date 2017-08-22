@@ -1,0 +1,26 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "family": "php-app",
+  "volumes": [
+    {
+      "name": "code",
+      "host": {
+        "sourcePath": "./php:/var/app/current/"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "php",
+      "image": "sean-peterson/php:5.6-cli",
+      "essential": false,
+      "memory": 128,
+      "mountPoints": [
+        {
+          "sourceVolume": "code",
+          "containerPath": "/app"
+        }
+      ]
+    }
+  ]
+}
