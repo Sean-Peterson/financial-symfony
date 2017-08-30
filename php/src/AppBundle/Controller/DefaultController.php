@@ -8,7 +8,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\UserInfoType;
 use AppBundle\Form\CompareType;
-use Doctrine\ORM\EntityManagerInterface;
 
 
 class DefaultController extends Controller
@@ -16,17 +15,43 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="home")
      */
-    public function homeAction(Request $request, EntityManagerInterface $em)
+    public function homeAction(Request $request)
     {
       return $this->render('default/index.html.twig');
     }
     /**
      * @Route("/single", name="single")
      */
-    public function resultsAction(Request $request, EntityManagerInterface $em)
+    public function resultsAction(Request $request)
     {
-      //create a repository full of the City objects
-      $repo = $this->getDoctrine()->getRepository('AppBundle:City');
+      $db=[];
+      $db['New-York']=['New-York','ny',1106,3006];
+      $db['Portland']=['Portland','or',0.8118,1551];
+      $db['Los-Angeles']=['Los-Angeles','ca',0.8228,1960];
+      $db['Denver']=['Denver','co',0.8169,1577];
+      $db['Austin']=['Austin','tx',0.7787,1574];
+      $db['Nashville']=['Nashville','tn',0.7773,1478];
+      $db['Seattle']=['Seattle','wa',0.9276,1875];
+      $db['Washington']=['Washington','dc',0.943,2128];
+      $db['San-Francisco']=['San-Francisco','ca',1.0146,3278];
+      $db['Chicago']=['Chicago','il',0.8465,1802];
+      $db['Boston']=['Boston','ma',0.9073,2442];
+      $db['Minneapolis']=['Minneapolis','mn',0.8553,1349];
+      $db['Dallas']=['Dallas','tx',0.6974,1229];
+      $db['Houston']=['Houston','tx',0.7616,1356];
+      $db['San-Jose']=['San-Jose','ca',0.8449,2414];
+      $db['Indianapolis']=['Indianapolis','in',0.8078,1102];
+      $db['Philadelphia']=['Philadelphia','pa',0.8743,1568];
+      $db['San-Diego']=['San-Diego','ca',0.7908,1804];
+      $db['Phoenix']=['Phoenix','az',0.7111,974];
+      $db['Kansas-City']=['Kansas-City','mo',0.6883,909];
+      $db['Miami']=['Miami','fl',0.9125,1879];
+      $db['New-Orleans']=['New-Orleans','la',0.8199,1420];
+      $db['Pittsburgh']=['Pittsburgh','pa',0.8173,1148];
+      $db['Cleveland']=['Cleveland','oh',0.786,931];
+      $db['Oklahoma-City']=['Oklahoma-City','ok',0.668,830];
+      $db['Sacramento']=['Sacramento','ca',0.8236,1240];
+
       //creates an instance of the UserInfoType form and then handles the request
       $form = $this->createForm(UserInfoType::class);
       $form->handleRequest($request);
@@ -42,12 +67,17 @@ class DefaultController extends Controller
         $col = 0;
         $rent = 0;
         //finds the user specified city object from the repo and then gets all of it's information and sets it to variables
-        $city_object = $repo->findOneByCity($city);
-        $state = $city_object->getState();
-        $col = $city_object->getCol();
-        $rent = $city_object->getRent();
+        foreach ($db as $key => $value) {
+          var_dump($value[0]);
+          if ($value[0] == $city) {
+            $city_object=$db[$city];
+          }
+        }
+        $state = $city_object[1];
+        $col = $city_object[2];
+        $rent = $city_object[3];
         //NY is bar for cost of living. So, all cities have a percentage point value that multiplies by NY col. Therefore I must always call NY and have the ability to read its values
-        $ny = $repo->findOneByCity('New-York');
+        $ny = $db['New-York'];
         //this is the authorization that is required for the api to be valid
         $authorization = 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUElfS0VZX01BTkFHRVIiLCJodHRwOi8vdGF4ZWUuaW8vdXNlcl9pZCI6IjU5MTlmMTlmZTkyMWMwMzY2NjZmMTMxZiIsImh0dHA6Ly90YXhlZS5pby9zY29wZXMiOlsiYXBpIl0sImlhdCI6MTQ5NDg3MjQ3OX0.grP0a9fG_4NdaOaRWk5H-lwG9XOfcgic8eUmhTPF7Tc';
         //sets up a curl to make an HTTP request (the api call)
@@ -102,13 +132,13 @@ class DefaultController extends Controller
         $fed_tax=.01*((float)$decoded[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate']);
         //if the city is not new york then multiply by new york to get the correct COL since ny is the base standard
         if ($city != "New-York") {
-          $user_col = ($city_object->getCol()*.0001) * $ny->getCol();
-          $rent = $city_object->getRent();
-          $user_state = strtoupper($city_object->getState());
+          $user_col = ($city_object[2]*.0001) * $ny[2];
+          $rent = $city_object[3];
+          $user_state = strtoupper($city_object[1]);
         }else{
-          $user_col = $ny->getCol();
-          $rent = $ny->getRent();
-          $user_state = strtoupper($ny->getState());
+          $user_col = $ny[2];
+          $rent = $ny[3];
+          $user_state = strtoupper($ny[1]);
         }
         //monthly take home is income minus monthly innescapable costs (rent, col, taxes)
         $monthly_take_home = intval($income/12 - ((($income/12)*$state_tax)+(($income/12)*$fed_tax)+$user_col+$rent));
