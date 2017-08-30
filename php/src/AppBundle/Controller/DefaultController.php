@@ -68,7 +68,6 @@ class DefaultController extends Controller
         $rent = 0;
         //finds the user specified city object from the repo and then gets all of it's information and sets it to variables
         foreach ($db as $key => $value) {
-          var_dump($value[0]);
           if ($value[0] == $city) {
             $city_object=$db[$city];
           }

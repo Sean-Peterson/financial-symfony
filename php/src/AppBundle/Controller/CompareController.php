@@ -46,10 +46,8 @@ class CompareController extends Controller
       $db['Oklahoma-City']=['Oklahoma-City','ok',0.668,830];
       $db['Sacramento']=['Sacramento','ca',0.8236,1240];
 
-      //create a repository full of the City objects
-      $repo = $this->getDoctrine()->getRepository('AppBundle:City');
       //NY is bar for cost of living. So, all cities have a percentage point value that multiplies by NY col. Therefore I must always call NY and have the ability to read its values
-      $ny = $repo->findOneByCity('New-York');
+      $ny = $db['New-York'];
       //creates an instance of the UserInfoType form and then handles the request
       $form2 = $this->createForm(CompareType::class);
       $form2->handleRequest($request);
@@ -78,10 +76,14 @@ class CompareController extends Controller
           $city = $compare['city'][$i];
           $marital_status = $compare['marital_status'][$i];
           //finds the user specified city object from the repo and then gets all of it's information and sets it to variables
-          $city_object = $repo->findOneByCity($compare['city'][$i]);
-          $state = $city_object->getState();
-          $col = $city_object->getCol();
-          $rent = $city_object->getRent();
+          foreach ($db as $key => $value) {
+            if ($value[0] == $compare['city'][$i]) {
+              $city_object=$db[$compare['city'][$i]];
+            }
+          }
+          $state = $city_object[1];
+          $col = $city_object[2];
+          $rent = $city_object[3];
 
           //this is the authorization that is required for the api to be valid
           $authorization = 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUElfS0VZX01BTkFHRVIiLCJodHRwOi8vdGF4ZWUuaW8vdXNlcl9pZCI6IjU5MTlmMTlmZTkyMWMwMzY2NjZmMTMxZiIsImh0dHA6Ly90YXhlZS5pby9zY29wZXMiOlsiYXBpIl0sImlhdCI6MTQ5NDg3MjQ3OX0.grP0a9fG_4NdaOaRWk5H-lwG9XOfcgic8eUmhTPF7Tc';
@@ -137,13 +139,13 @@ class CompareController extends Controller
           $fed_tax=.01*((float)$decoded[$marital_status]['income_tax_brackets'][$tax_array_number]['marginal_rate']);
           //if the city is not new york then multiply by new york to get the correct COL since ny is the base standard
           if ($city != "New-York") {
-            $user_col = ($city_object->getCol()*.0001) * $ny->getCol();
-            $rent = $city_object->getRent();
-            $user_state = strtoupper($city_object->getState());
+            $user_col = ($city_object[2]*.0001) * $ny[2];
+            $rent = $city_object[3];
+            $user_state = strtoupper($city_object[1]);
           }else{
-            $user_col = $ny->getCol();
-            $rent = $ny->getRent();
-            $user_state = strtoupper($ny->getState());
+            $user_col = $ny[2];
+            $rent = $ny[3];
+            $user_state = strtoupper($ny[1]);
           }
           //monthly take home is income minus monthly innescapable costs (rent, col, taxes)
           $monthly_take_home = intval($income/12 - ((($income/12)*$state_tax)+(($income/12)*$fed_tax)+$user_col+$rent));
